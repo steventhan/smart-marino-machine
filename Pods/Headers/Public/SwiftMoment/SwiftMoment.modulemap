@@ -1,0 +1,6 @@
+module SwiftMoment [system] {
+  umbrella header "SwiftMoment-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+module Pods_machine [system] {
+  umbrella header "Pods-machine-umbrella.h"
+
+  export *
+  module * { export * }
+}

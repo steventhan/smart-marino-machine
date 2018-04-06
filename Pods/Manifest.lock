@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.7.1)
+  - SwiftMoment (0.7)
+
+DEPENDENCIES:
+  - Alamofire
+  - SwiftMoment
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - SwiftMoment
+
+SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  SwiftMoment: dc6dd27012e267819104cbb03f74ff9192dd0b42
+
+PODFILE CHECKSUM: 6c5b500ef42d326c75eafb166d66e8544dcda25f
+
+COCOAPODS: 1.5.0
