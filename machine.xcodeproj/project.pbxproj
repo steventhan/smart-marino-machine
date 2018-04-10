@@ -17,6 +17,7 @@
 		B078C23E20754696008D3879 /* machineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078C23D20754696008D3879 /* machineTests.swift */; };
 		B078C24920754696008D3879 /* machineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078C24820754696008D3879 /* machineUITests.swift */; };
 		B0945FD22075F20A00358586 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0945FD12075F20A00358586 /* TimerViewController.swift */; };
+		B0BA27CE207B3261005A09D1 /* BusyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA27CD207B3261005A09D1 /* BusyViewController.swift */; };
 		D3E07FF46477FB706599D514 /* libPods-machine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E75248457D4CBF54577A0B5 /* libPods-machine.a */; };
 		E5502F55B48B3314309C27DD /* libPods-machineUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB673D065C75B73967D98844 /* libPods-machineUITests.a */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		B078C24820754696008D3879 /* machineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = machineUITests.swift; sourceTree = "<group>"; };
 		B078C24A20754696008D3879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0945FD12075F20A00358586 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		B0BA27CD207B3261005A09D1 /* BusyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyViewController.swift; sourceTree = "<group>"; };
 		B2DAC26FA0254F98CA16A46A /* Pods-machine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-machine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-machine/Pods-machine.debug.xcconfig"; sourceTree = "<group>"; };
 		D2CF42C3E4EF56ED97E593F0 /* Pods-machineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-machineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-machineTests/Pods-machineTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA375992EA4B238E4E4B3209 /* Pods-machineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-machineUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-machineUITests/Pods-machineUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				B078C22820754696008D3879 /* AppDelegate.swift */,
 				B078C22A20754696008D3879 /* ViewController.swift */,
+				B0BA27CD207B3261005A09D1 /* BusyViewController.swift */,
 				B0945FD12075F20A00358586 /* TimerViewController.swift */,
 				B078C22C20754696008D3879 /* Main.storyboard */,
 				B078C22F20754696008D3879 /* Assets.xcassets */,
@@ -238,7 +241,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Steven Than";
 				TargetAttributes = {
 					B078C22420754695008D3879 = {
@@ -387,6 +390,7 @@
 				B078C22B20754696008D3879 /* ViewController.swift in Sources */,
 				B016F4E82076070600987D68 /* Rez.swift in Sources */,
 				B0945FD22075F20A00358586 /* TimerViewController.swift in Sources */,
+				B0BA27CE207B3261005A09D1 /* BusyViewController.swift in Sources */,
 				B078C22920754696008D3879 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +460,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -463,6 +468,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -513,6 +519,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -520,6 +527,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

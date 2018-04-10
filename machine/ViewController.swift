@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     let machineId = 202
     var count = 0
+    var apiTimer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +25,11 @@ class ViewController: UIViewController {
         let url = "https://smart-marino.herokuapp.com/api/machines/\(machineId)/reservation?user=steven"
         Alamofire.request(url).responseJSON { response in
             if let rez = response.result.value as? Dictionary<String, String> {
-                if let status = rez["status"], status == "started" {
-                    self.performSegue(withIdentifier: "rezStarted", sender: self)
-                }
+                self.apiTimer.invalidate()
+                self.performSegue(withIdentifier: "booked", sender: self)
             }
                 
-            Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.getCurrentReservation), userInfo: nil, repeats: false)
+            self.apiTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.getCurrentReservation), userInfo: nil, repeats: false)
         }
     }
 

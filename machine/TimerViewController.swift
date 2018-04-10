@@ -14,6 +14,7 @@ class TimerViewController: UIViewController {
     let machineId = 202
     
     var timer = Timer()
+    var apiTimer = Timer()
 
     var end = moment() {
         didSet {
@@ -46,6 +47,7 @@ class TimerViewController: UIViewController {
         Alamofire.request(url).responseJSON { response in
             if let rez = response.result.value as? Dictionary<String, String> {
                 if let status = rez["status"], status != "started" {
+                    self.apiTimer.invalidate()
                     self.performSegue(withIdentifier: "rezEnded", sender: self)
                 }
                 
@@ -58,7 +60,7 @@ class TimerViewController: UIViewController {
                 self.performSegue(withIdentifier: "rezEnded", sender: self)
             }
 
-            Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.getCurrentReservation), userInfo: nil, repeats: false)
+            self.apiTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.getCurrentReservation), userInfo: nil, repeats: false)
         }
     }
 
